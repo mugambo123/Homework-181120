@@ -1,0 +1,241 @@
+{
+  "id": "73b25093-8127-40ff-a4ff-fa809705d670",
+  "version": "2.0",
+  "name": "Barclays",
+  "url": "https://www.barclays.co.uk",
+  "tests": [{
+    "id": "509ecd7b-58a9-4681-8f3d-be42977c955b",
+    "name": "Test1",
+    "commands": [{
+      "id": "af7c5c38-e90e-4903-9a4e-5fc31a4950c8",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f3e9ad3-9604-42a4-883a-4b4637604a73",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7462fd8f-0274-41c4-a8ad-6fbe675ce2c6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log In",
+      "targets": [
+        ["linkText=Log In", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log In')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://bank.barclays.co.uk/olb/authlogin/loginAppContainer.do')]", "xpath:href"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a45134c6-6592-42a3-8079-d70115adc7a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=surname0",
+      "targets": [
+        ["id=surname0", "id"],
+        ["css=#surname0", "css:finder"],
+        ["xpath=//input[@id='surname0']", "xpath:attributes"],
+        ["xpath=//div[@id='login-bootstrap']/div/div/div/div/div/div/div[4]/section/form/div/div/div/div/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de00ae38-9624-4119-b7f7-83bcfea64c3e",
+      "comment": "",
+      "command": "type",
+      "target": "id=surname0",
+      "targets": [
+        ["id=surname0", "id"],
+        ["css=#surname0", "css:finder"],
+        ["xpath=//input[@id='surname0']", "xpath:attributes"],
+        ["xpath=//div[@id='login-bootstrap']/div/div/div/div/div/div/div[4]/section/form/div/div/div/div/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "gdsfgdf"
+    }, {
+      "id": "91ae8f95-7bf3-43b1-a2e2-938a86dbcf9f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(4) .narrow",
+      "targets": [
+        ["css=.row:nth-child(4) .narrow", "css:finder"],
+        ["xpath=//div[@id='login-bootstrap']/div/div/div/div/div/div/div[4]/section/form/div/div/div/div[4]/div/div/span/div/label", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/span/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Card number')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1e9eaf0-77b3-4686-a77f-8295ea0d4305",
+      "comment": "",
+      "command": "click",
+      "target": "id=cardNumber0",
+      "targets": [
+        ["id=cardNumber0", "id"],
+        ["name=debitCardSet1", "name"],
+        ["css=#cardNumber0", "css:finder"],
+        ["xpath=//input[@id='cardNumber0']", "xpath:attributes"],
+        ["xpath=//div[@id='login-bootstrap']/div/div/div/div/div/div/div[4]/section/form/div/div/div/div[4]/div/div/div/span/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d73b7c3-b9e5-4c0d-947c-934f6d8ea01e",
+      "comment": "",
+      "command": "type",
+      "target": "id=cardNumber0",
+      "targets": [
+        ["id=cardNumber0", "id"],
+        ["name=debitCardSet1", "name"],
+        ["css=#cardNumber0", "css:finder"],
+        ["xpath=//input[@id='cardNumber0']", "xpath:attributes"],
+        ["xpath=//div[@id='login-bootstrap']/div/div/div/div/div/div/div[4]/section/form/div/div/div/div[4]/div/div/div/span/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "5556"
+    }, {
+      "id": "e1e99757-ef3c-471d-a33a-84122799dfd8",
+      "comment": "",
+      "command": "type",
+      "target": "id=cardNumber1",
+      "targets": [
+        ["id=cardNumber1", "id"],
+        ["name=debitCardSet2", "name"],
+        ["css=#cardNumber1", "css:finder"],
+        ["xpath=//input[@id='cardNumber1']", "xpath:attributes"],
+        ["xpath=//div[@id='login-bootstrap']/div/div/div/div/div/div/div[4]/section/form/div/div/div/div[4]/div/div/div/span/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "5687"
+    }, {
+      "id": "cedb00c4-b0c2-4d12-9f05-fc2fcc5bdb6d",
+      "comment": "",
+      "command": "type",
+      "target": "id=cardNumber2",
+      "targets": [
+        ["id=cardNumber2", "id"],
+        ["name=debitCardSet3", "name"],
+        ["css=#cardNumber2", "css:finder"],
+        ["xpath=//input[@id='cardNumber2']", "xpath:attributes"],
+        ["xpath=//div[@id='login-bootstrap']/div/div/div/div/div/div/div[4]/section/form/div/div/div/div[4]/div/div/div/span/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "8890"
+    }, {
+      "id": "366c45f2-b17c-4321-af1a-d15aa363a34c",
+      "comment": "",
+      "command": "type",
+      "target": "id=cardNumber3",
+      "targets": [
+        ["id=cardNumber3", "id"],
+        ["name=debitCardSet4", "name"],
+        ["css=#cardNumber3", "css:finder"],
+        ["xpath=//input[@id='cardNumber3']", "xpath:attributes"],
+        ["xpath=//div[@id='login-bootstrap']/div/div/div/div/div/div/div[4]/section/form/div/div/div/div[4]/div/div/div/span/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "9876"
+    }, {
+      "id": "0cb16e81-d260-4116-874a-55046f86a2d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=label-sortCode-main",
+      "targets": [
+        ["id=label-sortCode-main", "id"],
+        ["css=#label-sortCode-main", "css:finder"],
+        ["xpath=//label[@id='label-sortCode-main']", "xpath:attributes"],
+        ["xpath=//div[@id='login-bootstrap']/div/div/div/div/div/div/div[4]/section/form/div/div/div/div[5]/div/div/span/div/label", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/span/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Sort code and account number')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c516f4e-44b0-41c9-a744-fe1f001760d3",
+      "comment": "",
+      "command": "click",
+      "target": "id=sortCode0",
+      "targets": [
+        ["id=sortCode0", "id"],
+        ["name=sortCodeSet1", "name"],
+        ["css=#sortCode0", "css:finder"],
+        ["xpath=//input[@id='sortCode0']", "xpath:attributes"],
+        ["xpath=//div[@id='login-bootstrap']/div/div/div/div/div/div/div[4]/section/form/div/div/div/div[5]/div/div/div/span/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "383d8d9f-db1d-4001-a409-b40e9dde5326",
+      "comment": "",
+      "command": "type",
+      "target": "id=sortCode0",
+      "targets": [
+        ["id=sortCode0", "id"],
+        ["name=sortCodeSet1", "name"],
+        ["css=#sortCode0", "css:finder"],
+        ["xpath=//input[@id='sortCode0']", "xpath:attributes"],
+        ["xpath=//div[@id='login-bootstrap']/div/div/div/div/div/div/div[4]/section/form/div/div/div/div[5]/div/div/div/span/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12"
+    }, {
+      "id": "b81556d6-2d34-4602-b5a3-658a1e63db3f",
+      "comment": "",
+      "command": "type",
+      "target": "id=sortCode1",
+      "targets": [
+        ["id=sortCode1", "id"],
+        ["name=sortCodeSet2", "name"],
+        ["css=#sortCode1", "css:finder"],
+        ["xpath=//input[@id='sortCode1']", "xpath:attributes"],
+        ["xpath=//div[@id='login-bootstrap']/div/div/div/div/div/div/div[4]/section/form/div/div/div/div[5]/div/div/div/span/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "34"
+    }, {
+      "id": "2b173a0b-ddcc-4558-9561-5c9d6c074140",
+      "comment": "",
+      "command": "type",
+      "target": "id=sortCode2",
+      "targets": [
+        ["id=sortCode2", "id"],
+        ["name=sortCodeSet3", "name"],
+        ["css=#sortCode2", "css:finder"],
+        ["xpath=//input[@id='sortCode2']", "xpath:attributes"],
+        ["xpath=//div[@id='login-bootstrap']/div/div/div/div/div/div/div[4]/section/form/div/div/div/div[5]/div/div/div/span/div/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "56"
+    }, {
+      "id": "36cae088-3bec-40d7-961e-f04ab45880e5",
+      "comment": "",
+      "command": "type",
+      "target": "id=sortCode3",
+      "targets": [
+        ["id=sortCode3", "id"],
+        ["name=accountNumber", "name"],
+        ["css=#sortCode3", "css:finder"],
+        ["xpath=//input[@id='sortCode3']", "xpath:attributes"],
+        ["xpath=//div[@id='login-bootstrap']/div/div/div/div/div/div/div[4]/section/form/div/div/div/div[5]/div/div/div/span/div/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "78990099"
+    }]
+  }],
+  "suites": [{
+    "id": "2e024f65-4ec8-42ec-8e7a-7190b6aa1403",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["509ecd7b-58a9-4681-8f3d-be42977c955b"]
+  }],
+  "urls": ["https://www.barclays.co.uk/"],
+  "plugins": []
+}

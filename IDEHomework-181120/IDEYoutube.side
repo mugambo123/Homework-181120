@@ -1,0 +1,388 @@
+{
+  "id": "f304736e-0b8a-4e11-ad7d-a8a6a5cc1a79",
+  "version": "2.0",
+  "name": "Youtube",
+  "url": "https://www.youtube.com",
+  "tests": [{
+    "id": "60f96974-30f9-4daa-a1bf-b2a214b98793",
+    "name": "SearchAndPlaySong",
+    "commands": [{
+      "id": "cc54bd8e-b090-499f-8ea6-1d9ff4d74128",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4de6cf69-45d3-476c-810a-b7d43db03531",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f6fb89d6-c8b1-4ab6-a017-65476a2c6bf2",
+      "comment": "",
+      "command": "click",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d260e1e1-c2a3-442e-9172-e26be8232fba",
+      "comment": "",
+      "command": "click",
+      "target": "css=#sbse11 b",
+      "targets": [
+        ["css=#sbse11 b", "css:finder"],
+        ["xpath=//div[@id='sbse11']/div[2]/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'chogada tara')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bd3fc173-7d98-4595-9b6f-45f18962b251",
+      "comment": "",
+      "command": "type",
+      "target": "name=search_query",
+      "targets": [
+        ["name=search_query", "name"],
+        ["css=#search-input > #search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "chhogada"
+    }, {
+      "id": "a34ef13b-7469-4555-83e1-fdba53db5083",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ytd-item-section-renderer:nth-child(1) > #dismissable #thumbnail #img",
+      "targets": [
+        ["css=.ytd-item-section-renderer:nth-child(1) > #dismissable #thumbnail #img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://i.ytimg.com/vi/asYxxtiWUyw/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAm-aaPuauJjTu07-xA2TO9w263Ow')]", "xpath:img"],
+        ["xpath=(//img[@id='img'])[81]", "xpath:attributes"],
+        ["xpath=(//a[@id='thumbnail']/yt-img-shadow/img)[36]", "xpath:idRelative"],
+        ["xpath=//ytd-video-renderer/div/ytd-thumbnail/a/yt-img-shadow/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95a96926-18c0-45f9-ae1a-45ed13effe4b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ytd-item-section-renderer:nth-child(1) > #dismissable #thumbnail #img",
+      "targets": [
+        ["css=.ytd-item-section-renderer:nth-child(1) > #dismissable #thumbnail #img", "css:finder"],
+        ["xpath=//img[contains(@src,'https://i.ytimg.com/vi/asYxxtiWUyw/hq720.jpg?sqp=-oaymwEZCOgCEMoBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAm-aaPuauJjTu07-xA2TO9w263Ow')]", "xpath:img"],
+        ["xpath=(//img[@id='img'])[81]", "xpath:attributes"],
+        ["xpath=(//a[@id='thumbnail']/yt-img-shadow/img)[36]", "xpath:idRelative"],
+        ["xpath=//ytd-video-renderer/div/ytd-thumbnail/a/yt-img-shadow/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e715a0b2-9abc-44a3-9cdb-a0e29257e133",
+      "comment": "",
+      "command": "click",
+      "target": "id=play",
+      "targets": [
+        ["id=play", "id"],
+        ["css=#play", "css:finder"],
+        ["xpath=//yt-icon[@id='play']", "xpath:attributes"],
+        ["xpath=//div[@id='mouseover-overlay']/ytd-moving-thumbnail-renderer/yt-icon", "xpath:idRelative"],
+        ["xpath=//ytd-moving-thumbnail-renderer/yt-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b0a7284-4fb5-47e0-8477-5f8fbbc9bc2b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ytp-fullscreen-button",
+      "targets": [
+        ["css=.ytp-fullscreen-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[23]/div[2]/div[2]/button[9]", "xpath:idRelative"],
+        ["xpath=//button[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dea6372-973c-4d18-a397-c20acb18182d",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ytp-fullscreen-button",
+      "targets": [
+        ["css=.ytp-fullscreen-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[23]/div[2]/div[2]/button[9]", "xpath:idRelative"],
+        ["xpath=//button[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a445c757-b2c0-419d-964c-2aa7499fb581",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ytp-fullscreen-button",
+      "targets": [
+        ["css=.ytp-fullscreen-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[23]/div[2]/div[2]/button[9]", "xpath:idRelative"],
+        ["xpath=//button[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed9ab005-bf28-4d87-bac8-e650ca0a1107",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-fullscreen-button",
+      "targets": [
+        ["css=.ytp-fullscreen-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[23]/div[2]/div[2]/button[9]", "xpath:idRelative"],
+        ["xpath=//button[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "438b8802-1ffb-4842-b5d2-a7ff0153f050",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.ytp-fullscreen-button",
+      "targets": [
+        ["css=.ytp-fullscreen-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[23]/div[2]/div[2]/button[9]", "xpath:idRelative"],
+        ["xpath=//button[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1862ca29-c603-45c8-a9bf-908e7f032bdc",
+      "comment": "",
+      "command": "click",
+      "target": "id=ad-text:7",
+      "targets": [
+        ["id=ad-text:7", "id"],
+        ["css=#ad-text\\3A 7", "css:finder"],
+        ["xpath=//div[@id='ad-text:7']", "xpath:attributes"],
+        ["xpath=//div[@id='skip-button:6']/span/button/div", "xpath:idRelative"],
+        ["xpath=//span/button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e2e4d6e-4e4d-4141-a663-148d97167888",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[32]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35d0941e-8585-4576-81d4-db01d9739403",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[32]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c10521b5-6cf5-4b27-9ab6-e98d0e58d4c7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-mute-button",
+      "targets": [
+        ["css=.ytp-mute-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[32]/div[2]/div/span/button", "xpath:idRelative"],
+        ["xpath=//div/span/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dc11893-885b-4258-9174-31f5a1a53952",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-mute-button",
+      "targets": [
+        ["css=.ytp-mute-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[32]/div[2]/div/span/button", "xpath:idRelative"],
+        ["xpath=//div/span/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "59e57491-e8e7-46af-a174-306c69a6d6a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-mute-button",
+      "targets": [
+        ["css=.ytp-mute-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[32]/div[2]/div/span/button", "xpath:idRelative"],
+        ["xpath=//div/span/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e7cbbfc-3f8c-4362-90b7-c3fca68a3fda",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[32]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c06644d-110c-4cd9-b5fc-a39fd718d3ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-play-button",
+      "targets": [
+        ["css=.ytp-play-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[32]/div[2]/div/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d5dc991-d912-49d2-bb6a-44b10d1cf99c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-mute-button",
+      "targets": [
+        ["css=.ytp-mute-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[32]/div[2]/div/span/button", "xpath:idRelative"],
+        ["xpath=//div/span/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "137e5e39-f509-4114-8f6b-7c5a9827e139",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-settings-button",
+      "targets": [
+        ["css=.ytp-settings-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[32]/div[2]/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "101ae643-b29b-42b2-b9cf-de3ca5ae7a9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-menu-label-secondary",
+      "targets": [
+        ["css=.ytp-menu-label-secondary", "css:finder"],
+        ["xpath=//div[@id='ytp-id-17']/div/div/div[4]/div[3]/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'720p')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1302a2c-c281-4817-bc8f-0be8153b5a31",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-menuitem:nth-child(1) span",
+      "targets": [
+        ["css=.ytp-menuitem:nth-child(1) span", "css:finder"],
+        ["xpath=//div[@id='ytp-id-17']/div/div[2]/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'720p')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0154a84c-7443-4568-9895-f0ce43f065eb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-settings-button",
+      "targets": [
+        ["css=.ytp-settings-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[32]/div[2]/div[2]/button[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9793cf8e-1451-4eef-a2d5-7c61fc3afbbc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-menuitem-content span",
+      "targets": [
+        ["css=.ytp-menuitem-content span", "css:finder"],
+        ["xpath=//div[@id='ytp-id-17']/div/div/div[4]/div[3]/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'720p')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "05e02ac9-8797-40f2-a360-8af7a29fcfd8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-menuitem:nth-child(6) span",
+      "targets": [
+        ["css=.ytp-menuitem:nth-child(6) span", "css:finder"],
+        ["xpath=//div[@id='ytp-id-17']/div/div[2]/div[6]/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a9de52aa-eaba-4484-bc17-f89960dd2e18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-progress-bar",
+      "targets": [
+        ["css=.ytp-progress-bar", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[32]/div/div", "xpath:idRelative"],
+        ["xpath=//div[32]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d28122c-0563-4a15-9169-a06c1ac593f5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-progress-bar",
+      "targets": [
+        ["css=.ytp-progress-bar", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[32]/div/div", "xpath:idRelative"],
+        ["xpath=//div[32]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbfa84ef-7f22-47a7-bd2b-20edf633c0e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-progress-bar",
+      "targets": [
+        ["css=.ytp-progress-bar", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[32]/div/div", "xpath:idRelative"],
+        ["xpath=//div[32]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcc15171-97da-4ee3-8a41-0036e7302934",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ytp-fullscreen-button",
+      "targets": [
+        ["css=.ytp-fullscreen-button", "css:finder"],
+        ["xpath=//div[@id='movie_player']/div[32]/div[2]/div[2]/button[9]", "xpath:idRelative"],
+        ["xpath=//button[9]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fbc892b-a296-4c45-b27a-440e280158a0",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9a0a6b15-9b9b-4368-a8bc-bbc1a7b26be5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["60f96974-30f9-4daa-a1bf-b2a214b98793"]
+  }],
+  "urls": ["https://www.youtube.com/"],
+  "plugins": []
+}

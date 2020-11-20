@@ -1,0 +1,74 @@
+{
+  "id": "62a84942-d3bc-48f7-b5f2-3a1d2b2a7f16",
+  "version": "2.0",
+  "name": "Netflix",
+  "url": "https://www.netflix.com",
+  "tests": [{
+    "id": "2af8fbf9-bd17-4dbf-bf26-7a195fb41833",
+    "name": "Test1",
+    "commands": [{
+      "id": "c130be59-2e94-4361-a7f9-6dabb8df4791",
+      "comment": "",
+      "command": "open",
+      "target": "/gb/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dae53734-28df-4973-accc-9cd39615dcf1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b5b4ab4-47c2-499b-b3d5-8c340b2db282",
+      "comment": "",
+      "command": "click",
+      "target": "css=.faq-list-item:nth-child(5) > .faq-question",
+      "targets": [
+        ["css=.faq-list-item:nth-child(5) > .faq-question", "css:finder"],
+        ["xpath=//div[@id='faq']/div/ul/li[5]/button", "xpath:idRelative"],
+        ["xpath=//li[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'What can I watch on Netflix?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "980c168c-7d1b-4627-8e0c-564b5d703ca7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cta-btn-container > .btn-red",
+      "targets": [
+        ["css=.cta-btn-container > .btn-red", "css:finder"],
+        ["xpath=//div[@id='cookie-disclosure']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Accept')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3de4906f-7d99-4ae9-b65e-16985a587688",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign In",
+      "targets": [
+        ["linkText=Sign In", "linkText"],
+        ["css=.authLinks", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign In')]", "xpath:link"],
+        ["xpath=//div[@id='appMountPoint']/div/div/div/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f0ab2d5d-3141-494b-a261-c6367438bf78",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2af8fbf9-bd17-4dbf-bf26-7a195fb41833"]
+  }],
+  "urls": ["https://www.netflix.com/"],
+  "plugins": []
+}

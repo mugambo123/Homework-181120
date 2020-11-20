@@ -1,0 +1,204 @@
+{
+  "id": "0b365128-d326-4ee1-9383-3a8186083266",
+  "version": "2.0",
+  "name": "Zoom",
+  "url": "https://zoom.us",
+  "tests": [{
+    "id": "b42157f1-34d6-47cc-b474-68b0648e3d73",
+    "name": "AgeRestrictionTest",
+    "commands": [{
+      "id": "bc1a7479-db34-4c7d-99de-d3c9a262752c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee231157-d10b-4439-97b3-b61040b1f39f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "18af9f67-1073-464f-8924-628fb1e87c65",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=btnResouces",
+      "targets": [
+        ["id=btnResouces", "id"],
+        ["css=#btnResouces", "css:finder"],
+        ["xpath=//a[contains(text(),'Resources')]", "xpath:link"],
+        ["xpath=//a[@id='btnResouces']", "xpath:attributes"],
+        ["xpath=//li[@id='resources']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:;')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0e16d9f-78c8-41e3-880d-7188c2b24e23",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnJoinMeeting",
+      "targets": [
+        ["id=btnJoinMeeting", "id"],
+        ["linkText=JOIN A MEETING", "linkText"],
+        ["css=#btnJoinMeeting", "css:finder"],
+        ["xpath=//a[contains(text(),'JOIN A MEETING')]", "xpath:link"],
+        ["xpath=//a[@id='btnJoinMeeting']", "xpath:attributes"],
+        ["xpath=//div[@id='navbar']/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://zoom.us/join')])[2]", "xpath:href"],
+        ["xpath=//ul[2]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'JOIN A MEETING')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3de6fb5-e02c-4921-abea-923efd720283",
+      "comment": "",
+      "command": "click",
+      "target": "id=btnSubmit",
+      "targets": [
+        ["id=btnSubmit", "id"],
+        ["linkText=Join", "linkText"],
+        ["css=#btnSubmit", "css:finder"],
+        ["xpath=//a[contains(text(),'Join')]", "xpath:link"],
+        ["xpath=//a[@id='btnSubmit']", "xpath:attributes"],
+        ["xpath=//form[@id='join-form']/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[6]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Join')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b2ff26d-e8bc-4ebf-b04e-7250f7a8864f",
+      "comment": "",
+      "command": "click",
+      "target": "id=join-confno",
+      "targets": [
+        ["id=join-confno", "id"],
+        ["name=join-confno", "name"],
+        ["css=#join-confno", "css:finder"],
+        ["xpath=//input[@id='join-confno']", "xpath:attributes"],
+        ["xpath=//form[@id='join-form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "91ff343d-b3c4-45d5-8651-988d9f46e418",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=SIGN UP, IT'S FREE",
+      "targets": [
+        ["linkText=SIGN UP, IT'S FREE", "linkText"],
+        ["css=.cta-bgyellow", "css:finder"],
+        ["xpath=//div[@id='signupfree']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://zoom.us/signup')]", "xpath:href"],
+        ["xpath=//li[7]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "483881c5-d81e-46fc-b553-df7062861ba1",
+      "comment": "",
+      "command": "click",
+      "target": "id=select-0",
+      "targets": [
+        ["id=select-0", "id"],
+        ["css=#select-0", "css:finder"],
+        ["xpath=//span[@id='select-0']", "xpath:attributes"],
+        ["xpath=//div[@id='age_gating_question']/div/div/div/div/span", "xpath:idRelative"],
+        ["xpath=//div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51f84d28-a32a-4b82-a008-db58b7cd02da",
+      "comment": "",
+      "command": "click",
+      "target": "id=select-item-select-0-1",
+      "targets": [
+        ["id=select-item-select-0-1", "id"],
+        ["css=#select-item-select-0-1", "css:finder"],
+        ["xpath=//dd[@id='select-item-select-0-1']", "xpath:attributes"],
+        ["xpath=//dl[@id='select-0-popup-list']/dd[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/dl/dd[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8fe2bf7-f42a-4b1b-aa57-74b9ae6e572e",
+      "comment": "",
+      "command": "click",
+      "target": "id=select-1",
+      "targets": [
+        ["id=select-1", "id"],
+        ["css=#select-1", "css:finder"],
+        ["xpath=//span[@id='select-1']", "xpath:attributes"],
+        ["xpath=//div[@id='age_gating_question']/div/div/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87b278bc-d18d-4da4-a792-fa55efd19d47",
+      "comment": "",
+      "command": "click",
+      "target": "css=#select-item-select-1-2 > span:nth-child(2)",
+      "targets": [
+        ["css=#select-item-select-1-2 > span:nth-child(2)", "css:finder"],
+        ["xpath=//dd[@id='select-item-select-1-2']/span[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/dl/dd[3]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d13b9a6-e370-42b9-9090-10b2d3ded4a8",
+      "comment": "",
+      "command": "click",
+      "target": "id=select-2",
+      "targets": [
+        ["id=select-2", "id"],
+        ["css=#select-2", "css:finder"],
+        ["xpath=//span[@id='select-2']", "xpath:attributes"],
+        ["xpath=//div[@id='age_gating_question']/div/div/div[3]/div/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43345e76-bd3e-4889-8341-f3463f296fa8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#select-item-select-2-5 > span:nth-child(2)",
+      "targets": [
+        ["css=#select-item-select-2-5 > span:nth-child(2)", "css:finder"],
+        ["xpath=//dd[@id='select-item-select-2-5']/span[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/dl/dd[6]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1168273a-2a55-4f91-a768-505dfc1df900",
+      "comment": "",
+      "command": "click",
+      "target": "css=.zm-button__slot",
+      "targets": [
+        ["css=.zm-button__slot", "css:finder"],
+        ["xpath=//div[@id='age_gating_question']/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7602eae-6b78-4e96-b309-225a25d5c025",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bfc53bcb-78a5-4c48-8fa9-e631e0e095d3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b42157f1-34d6-47cc-b474-68b0648e3d73"]
+  }],
+  "urls": ["https://zoom.us/"],
+  "plugins": []
+}

@@ -1,0 +1,96 @@
+{
+  "id": "9dba4336-6a89-4f63-8b97-758adbad60b5",
+  "version": "2.0",
+  "name": "nopcommerce",
+  "url": "https://demo.nopcommerce.com",
+  "tests": [{
+    "id": "bb72e6d7-ecef-4a74-8d31-39bc5791c63f",
+    "name": "LogInTest",
+    "commands": [{
+      "id": "52560869-a036-4f0e-90dd-de59002153ff",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4eeaa4ed-5a53-4b6e-8591-2d0cdc36dd05",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dabd2517-744a-4bab-a63a-323291f3316f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.ico-login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login?returnUrl=%2F')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d7d77f6-4b84-4510-8494-7f8d8f38832a",
+      "comment": "",
+      "command": "type",
+      "target": "id=Email",
+      "targets": [
+        ["id=Email", "id"],
+        ["name=Email", "name"],
+        ["css=#Email", "css:finder"],
+        ["xpath=//input[@id='Email']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "fil;flds@gmail.com"
+    }, {
+      "id": "39a82f7d-e59c-41ed-8fa4-6c07d6803ae4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-fields",
+      "targets": [
+        ["css=.form-fields", "css:finder"],
+        ["xpath=//form/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "459c21d1-4ae0-446d-8a85-15b721754802",
+      "comment": "",
+      "command": "type",
+      "target": "id=Password",
+      "targets": [
+        ["id=Password", "id"],
+        ["name=Password", "name"],
+        ["css=#Password", "css:finder"],
+        ["xpath=//input[@id='Password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "dwfdwf"
+    }, {
+      "id": "4b51e03d-9762-4de3-b225-02c183910f2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login-button",
+      "targets": [
+        ["css=.login-button", "css:finder"],
+        ["xpath=//input[@value='Log in']", "xpath:attributes"],
+        ["xpath=//form/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6fea413f-b94c-48a5-80d5-01d83037558e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bb72e6d7-ecef-4a74-8d31-39bc5791c63f"]
+  }],
+  "urls": ["https://demo.nopcommerce.com/"],
+  "plugins": []
+}
